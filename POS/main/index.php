@@ -52,7 +52,7 @@ if($position=='admin') {
 <a href="sales.php?id=credit&invoice=<?php echo $finalcode ?>">Credit</a>
 <a href="salesreport.php?d1=0&d2=0">Rapport des ventes</a>
 <a href="collection.php?d1=0&d2=0">Rapport de collecte</a>
-<a href="accountreceivables.php?d1=0&d2=0">Rapport des comptes à recevoir</a>
+<a href="accountreceivables.php?d1=0&d2=0">Rapport des comptes</a>
 <a rel="facebox" href="select_customer.php">Registe Des Clients</a>
 <a href="products.php">Produits</a>
 <a href="customer.php">Clients</a>
