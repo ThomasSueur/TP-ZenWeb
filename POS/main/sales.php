@@ -22,7 +22,7 @@ POS
 </head>
 <body>
 <div id="maintable"><div style="margin-top: -19px; margin-bottom: 21px;">
-<a id="addd" href="index.php" style="float: none;">Back</a>
+<a id="addd" href="index.php" style="float: none;">Retour</a>
 </div>
 <form action="incoming.php" method="post" >
 <input type="hidden" name="pt" value="<?php echo $_GET['id']; ?>" />
@@ -42,17 +42,17 @@ POS
 </select>
 <input type="text" name="qty" value="" placeholder="Qty" autocomplete="off" style="width: 68px; padding-top: 6px; padding-bottom: 6px; margin-right: 4px;" />
 <input type="text" name="discount" value="0" autocomplete="off" style="width: 68px; padding-top: 6px; padding-bottom: 6px; margin-right: 4px;" />
-<input type="submit" value="save" style="width: 123px;" />
+<input type="submit" value="Sauvegarder" style="width: 123px;" />
 </form>
 <table id="resultTable" data-responsive="table">
 	<thead>
 		<tr>
-			<th> Product Code </th>
-			<th> Product Name </th>
-			<th> Qty </th>
-			<th> Price </th>
-			<th> Discount </th>
-			<th> Amount </th>
+			<th> Code du Produit </th>
+			<th> Nom du Produit </th>
+			<th> Quantite </th>
+			<th> Prix </th>
+			<th> Decompte </th>
+			<th> Montant </th>
 			<th> Action </th>
 		</tr>
 	</thead>
@@ -88,7 +88,7 @@ POS
 			echo formatMoney($dfdf, true);
 			?>
 			</td>
-			<td><a href="delete.php?id=<?php echo $row['transaction_id']; ?>&invoice=<?php echo $_GET['invoice']; ?>&dle=<?php echo $_GET['id']; ?>&qty=<?php echo $row['qty'];?>&code=<?php echo $row['product'];?>"> Delete </a></td>
+			<td><a href="delete.php?id=<?php echo $row['transaction_id']; ?>&invoice=<?php echo $_GET['invoice']; ?>&dle=<?php echo $_GET['id']; ?>&qty=<?php echo $row['qty'];?>&code=<?php echo $row['product'];?>"> Supprimer </a></td>
 			</tr>
 			<?php
 				}
@@ -125,7 +125,7 @@ POS
 		
 	</tbody>
 </table><br>
-<a rel="facebox" id="cccc" href="checkout.php?pt=<?php echo $_GET['id']?>&invoice=<?php echo $_GET['invoice']?>&total=<?php echo $fgfg ?>&cashier=<?php echo $_SESSION['SESS_FIRST_NAME']?>">Check Out</a>
+<a rel="facebox" id="cccc" href="checkout.php?pt=<?php echo $_GET['id']?>&invoice=<?php echo $_GET['invoice']?>&total=<?php echo $fgfg ?>&cashier=<?php echo $_SESSION['SESS_FIRST_NAME']?>">Verifier</a>
 <div class="clearfix"></div>
 </div>
 </body>

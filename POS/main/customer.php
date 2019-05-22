@@ -21,16 +21,16 @@ POS
 </head>
 <body>
 <div id="maintable"><div style="margin-top: -19px; margin-bottom: 21px;">
-<a id="addd" href="index.php" style="float: none;">Back</a>
+<a id="addd" href="index.php" style="float: none;">Retour</a>
 </div>
-<input type="text" name="filter" value="" id="filter" placeholder="Search Customer..." autocomplete="off" /><a rel="facebox" id="addd" href="addcustomer.php">Add Customer</a><br><br>
+<input type="text" name="filter" value="" id="filter" placeholder="Search Customer..." autocomplete="off" /><a rel="facebox" id="addd" href="addcustomer.php">Ajouter un utilisateur</a><br><br>
 <table id="resultTable" data-responsive="table">
 	<thead>
 		<tr>
-			<th width="5%"> Name </th>
-			<th width="21%"> Address </th>
-			<th width="11%"> Contact </th>
-			<th width="11%"> Membership Number </th>
+			<th width="5%"> Nom </th>
+			<th width="21%"> Adresse </th>
+			<th width="11%"> Contacte </th>
+			<th width="11%"> Numero de membre </th>
 			<th width="12%"> Action </th>
 		</tr>
 	</thead>
@@ -47,7 +47,7 @@ POS
 			<td><?php echo $row['address']; ?></td>
 			<td><?php echo $row['contact']; ?></td>
 			<td><?php echo $row['membership_number']; ?></td>
-			<td><a rel="facebox" href="editcustomer.php?id=<?php echo $row['customer_id']; ?>"> Edit </a> | <a href="#" id="<?php echo $row['customer_id']; ?>" class="delbutton" title="Click To Delete">Delete</a></td>
+			<td><a rel="facebox" href="editcustomer.php?id=<?php echo $row['customer_id']; ?>"> Editer </a> | <a href="#" id="<?php echo $row['customer_id']; ?>" class="delbutton" title="Click To Delete">Supprimer</a></td>
 			</tr>
 			<?php
 				}

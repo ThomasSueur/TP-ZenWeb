@@ -23,16 +23,16 @@ POS
 <div id="maintable"><div style="margin-top: -19px; margin-bottom: 21px;">
 <a id="addd" href="index.php" style="float: none;">Back</a>
 </div>
-<input type="text" name="filter" value="" id="filter" placeholder="Search Product..." autocomplete="off" /><a rel="facebox" id="addd" href="addproduct.php">Add Product</a><br><br>
+<input type="text" name="filter" value="" id="filter" placeholder="Rechercher un produit..." autocomplete="off" /><a rel="facebox" id="addd" href="addproduct.php">Ajout de Produit</a><br><br>
 <table id="resultTable" data-responsive="table">
 	<thead>
 		<tr>
 			<th> Code </th>
-			<th> Name </th>
-			<th> Cost </th>
-			<th> Price </th>
-			<th> Supplier </th>
-			<th> Qty </th>
+			<th> Nom </th>
+			<th> Cout </th>
+			<th> Prix </th>
+			<th> Fournisseur </th>
+			<th> Quantite </th>
 			<th> Action </th>
 		</tr>
 	</thead>
@@ -71,7 +71,7 @@ POS
 			?></td>
 			<td><?php echo $row['supplier']; ?></td>
 			<td><?php echo $row['qty']; ?></td>
-			<td><a rel="facebox" href="editproduct.php?id=<?php echo $row['product_id']; ?>"> Edit </a> | <a href="#" id="<?php echo $row['product_id']; ?>" class="delbutton" title="Click To Delete">Delete</a></td>
+			<td><a rel="facebox" href="editproduct.php?id=<?php echo $row['product_id']; ?>"> Editer </a> | <a href="#" id="<?php echo $row['product_id']; ?>" class="delbutton" title="Click To Delete">Supprimer</a></td>
 			</tr>
 			<?php
 				}

@@ -34,31 +34,31 @@ function createRandomPassword() {
 }
 $finalcode='RS-'.createRandomPassword();
 ?>
-<div id="header" style="text-align: center; font-size: 20px; margin: 40px 0;"> Put Your Company Name Here
+<div id="header" style="text-align: center; font-size: 20px; margin: 40px 0;"> ZenWeb
 </div>
 <div id="mainmain">
 <?php
 $position=$_SESSION['SESS_LAST_NAME'];
 if($position=='cashier') {
 ?>
-<a href="sales.php?id=cash&invoice=<?php echo $finalcode ?>">Cash</a>
+<a href="sales.php?id=cash&invoice=<?php echo $finalcode ?>">Especes</a>
 <a href="sales.php?id=credit&invoice=<?php echo $finalcode ?>">Credit</a>
-<a href="../index.php">Logout</a>
+<a href="../index.php">Deconnexion</a>
 <?php
 }
 if($position=='admin') {
 ?>
-<a href="sales.php?id=cash&invoice=<?php echo $finalcode ?>">Cash</a>
+<a href="sales.php?id=cash&invoice=<?php echo $finalcode ?>">En Especes</a>
 <a href="sales.php?id=credit&invoice=<?php echo $finalcode ?>">Credit</a>
-<a href="salesreport.php?d1=0&d2=0">Sales Report</a>
-<a href="collection.php?d1=0&d2=0">Collection Report</a>
-<a href="accountreceivables.php?d1=0&d2=0">Accounts Receivable Report</a>
-<a rel="facebox" href="select_customer.php">Customer Ledger</a>
-<a href="products.php">Products</a>
-<a href="customer.php">Customers</a>
-<a href="supplier.php">Suppliers</a>
-<a href="purchaseslist.php">Purchases</a>
-<a href="../index.php">Logout</a>
+<a href="salesreport.php?d1=0&d2=0">Rapport des ventes</a>
+<a href="collection.php?d1=0&d2=0">Rapport de collecte</a>
+<a href="accountreceivables.php?d1=0&d2=0">Rapport des comptes</a>
+<a rel="facebox" href="select_customer.php">Registe Des Clients</a>
+<a href="products.php">Produits</a>
+<a href="customer.php">Clients</a>
+<a href="supplier.php">Fournisseurs</a>
+<a href="purchaseslist.php">Achats</a>
+<a href="../index.php">Deconnexion</a>
 <?php
 }
 ?>

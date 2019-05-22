@@ -25,24 +25,24 @@ function Clickheretoprint()
 <body>
 <div id="maintable">
 <div style="margin-top: -19px; margin-bottom: 21px;">
-<a id="addd" href="index.php" style="float: none;">Back</a>
+<a id="addd" href="index.php" style="float: none;">Retour</a>
 </div>
 <form action="accountreceivables.php" method="get">
-From : <input type="text" name="d1" class="tcal" value="" /> To: <input type="text" name="d2" class="tcal" value="" /> <input type="submit" value="Search"><a id="addd" href="javascript:Clickheretoprint()">Print</a>
+De : <input type="text" name="d1" class="tcal" value="" /> A: <input type="text" name="d2" class="tcal" value="" /> <input type="submit" value="Search"><a id="addd" href="javascript:Clickheretoprint()">Imprimer</a>
 </form>
 <div class="content" id="content">
 <div style="font-weight:bold; text-align:center;font-size:14px;margin-bottom: 15px;">
-Accounts Receivables Report from&nbsp;<?php echo $_GET['d1'] ?>&nbsp;to&nbsp;<?php echo $_GET['d2'] ?>
+Rapport des comptes debiteurs de&nbsp;<?php echo $_GET['d1'] ?>&nbsp;a&nbsp;<?php echo $_GET['d2'] ?>
 </div>
 <table id="resultTable" data-responsive="table" style="text-align: left;">
 	<thead>
 		<tr>
 			<th width="17%"> Transaction ID </th>
 			<th width="8%"> Date </th>
-			<th width="25%"> Customer Name </th>
-			<th width="25%"> Invoice Number </th>
+			<th width="25%"> Nom Client </th>
+			<th width="25%"> Numero de facture d'achat </th>
 			<th width="15%"> Ballance </th>
-			<th width="10%"> Due Date </th>
+			<th width="10%"> Date d'echeance </th>
 		</tr>
 	</thead>
 	<tbody>
